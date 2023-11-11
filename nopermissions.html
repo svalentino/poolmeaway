@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Permission denied</title>
+    <style>
+        .warning {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warning">
+        <p>
+            Extensions are not currently allowed to operate on <b>"chrome://"</b>
+            URLs.
+        </p>
+        <p>
+            This means that this extension can not close/flush the socket
+            pools automatically for you.
+        </p>
+        <p>
+            You have two options:
+        </p>
+        <p>
+            <b># Option 1</b><br>
+            Allow extensions to operate on <b>"chrome://"</b> URLs.<br><br>
+            Manually navigate to "chrome://flags/#extensions-on-chrome-urls" and set the value to <b>Enabled</b>. Once this is done, restart your browser.
+        </p>
+        <p>
+            <b># Option 2</b><br>
+            Use this extention to just quickly reach the URL
+            <b>"chrome://net-internals/#sockets"</b>.
+        </p>
+        <p>
+            In this scenario, you will have to manually click the
+            two buttons on your own.
+        </p>
+    </div>
+    <script src="./nopermissions.js"></script>
+</body>
+</html>

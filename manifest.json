@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "PoolMeAway",
+    "version": "1.0",
+    "description": "Quickly close and flush all Chrome's socket pools",
+    "action": {
+        "default_icon": "icons/pool8_180.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": ["chrome://net-internals/#sockets"]
+}
